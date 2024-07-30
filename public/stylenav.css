@@ -1,0 +1,37 @@
+
+nav {
+    background: #000000; /* لون الخلفية، يمكن تغييره حسب الحاجة */
+    height: auto;
+    display: flex;
+    justify-content: space-between; /* توزيع المحتوى بين اليسار واليمين */
+    align-items: center;
+    padding: 0px; 
+    color: #fff;
+    font-family: monospace;
+    width: 100%;
+
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px; /* مسافة بين الروابط */
+  }
+  
+  nav a:hover {
+    color: #7799D8; /* لون التمرير عند التمرير فوق الروابط */
+  }
+  
+  nav .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  
+img{
+  width:20vh ;
+}

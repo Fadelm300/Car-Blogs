@@ -1,6 +1,7 @@
 <%- include('../partials/head.ejs') %>
 
     <%- include('../partials/_navbar.ejs') %>
+    <div class="container-box">
 
     <h1>Edit <%= car.name %></h1>
 
@@ -9,5 +10,8 @@
         <input type="text" name="name" id="name" value="<%= car.name %>" required>
         <button type="submit">Update Item</button>
     </form>
+
+
+</div>
     <%- include('../partials/end.ejs') %>
 

@@ -2,6 +2,9 @@
 
 
   <%- include('../partials/_navbar.ejs') %>
+
+  <div class="container-box">
+
   <h1>Community</h1>
   <ul>
     <% users.forEach(user => { %>
@@ -11,7 +14,7 @@
     <% }); %>
   </ul>
 
-
+</div>
   <%- include('../partials/_footer.ejs') %>
 
   <%- include('../partials/end.ejs') %>
