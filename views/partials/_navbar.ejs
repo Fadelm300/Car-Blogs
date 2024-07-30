@@ -3,11 +3,11 @@
     <div class="nav-left">
       <img src="/cars-blog.png" alt="cars-blog.png">
   </div>
-    <a href="/">Home</a>
+    <a href="/users/<%=user._id%>/cars">Home</a>
   </div>
   <div class="nav-right">
     <% if(user) { %>
-      <a href="/users/<%=user._id%>/cars">View my Storage</a>
+      <a href="/users/<%=user._id%>/cars">My Blogs</a>
       <a href="/users">Explore Our Community</a>
       <a href="/auth/sign-out">Sign Out</a>
     <% } else { %>

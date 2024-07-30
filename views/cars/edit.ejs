@@ -1,17 +1,32 @@
 <%- include('../partials/head.ejs') %>
 
-<div class="container-box">
+
         <%- include('../partials/_navbar.ejs') %>
 
     <h1>Edit <%= car.name %></h1>
-
+<div class="container">
     <form action="/users/<%= user._id %>/cars/<%= car._id %>?_method=PUT" method="POST">
+        
         <label for="name">car Name:</label>
-        <input type="text" name="name" id="name" value="<%= car.name %>" required>
+        <input   value="<%= car.name %>"  type="text" name="name" id="name" required>
+        <label for="name">car model:</label>
+        <input  value="<%= car.model %>"  type="text" name="model" id="model" required>
+        <label for="name">car company:</label>
+        <input value="<%= car.car_company %>" type="text" name="car_company" id="car_company" required>
+        <label for="name">car manufacturer:</label>
+        <input  value="<%= car.car_manufacturer %>" type="text" name="car_manufacturer" id="car_manufacturer" required>
+        <label for="name">car Top speed:</label>
+        <input  value="<%= car.top_speed %>"  type="text" name="top_speed" id="top_speed" required>
+        <label for="name">car discription:</label>
+        <input  value="<%= car.discription %>"  type="text" name="discription" id="discription" required>
+
+
         <button type="submit">Update Item</button>
     </form>
-    <%- include('../partials/_footer.ejs') %>
+
 </div>
+    <%- include('../partials/_footer.ejs') %>
+
 
     <%- include('../partials/end.ejs') %>
 

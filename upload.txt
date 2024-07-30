@@ -1,35 +1,20 @@
-  <div class="card" style="width: 18rem;">
-      <img src="public/cars-blog.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
+<%- include('../partials/head.ejs') %>
 
 
 
-  <div>
-      <% if (pantry.length > 0) { %>
-     
+  <%- include('../partials/_navbar.ejs') %>
+  <div class="container-box">
 
-          
+  <h1><%= user.username %> Storage</h1>
+  <ul>
+    <% Storage.forEach(car => { %>
+      <li><%= car.name %></li>        <a href="/users/<%= user._id %>/cars/<%= car._id %>"><%= car.name %></a>
 
-            <% pantry.forEach(function(car) { %>
-<div id="items-container">
-<h2> <a href="/users/<%= user._id %>/cars/<%= car._id %>"><%= car.name %></a></h2>
-    <div class="item-box">
-                    <p><%= car.discription %></p>
-                </div>
- </div>
-            <% }) %>
+    <% }); %>
+  </ul>
 
-       
-      <% } else { %>
-        <p>There are no items in this pantry.</p>
-        
-      <% } %>
-    </div>
-<!--  -->
-    <!--  -->
-  
-    <button><a href="/users/<%= user._id %>/cars/new">Add a New Item</a></button>
-  </div>
+
+  <%- include('../partials/_footer.ejs') %>
+</div>
+  <%- include('../partials/end.ejs') %>
+
