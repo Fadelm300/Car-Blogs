@@ -1,0 +1,27 @@
+<%- include('../partials/head.ejs') %>
+
+    <%- include('../partials/_navbar.ejs') %>
+
+    <h1>Add a New Item</h1>
+    <div class="container">
+    <form action="/users/<%= user._id %>/cars" method="POST">
+        <input   placeholder="Car Name:"  type="text" name="name" id="name" required>
+        
+        <input  placeholder="Car model:"  type="text" name="model" id="model" required>
+
+        <input placeholder="Car company" type="text" name="car_company" id="car_company" required>
+
+        <input  placeholder="Car manufacturer" type="text" name="car_manufacturer" id="car_manufacturer" required>
+
+        <input  placeholder="Car top speed:"  type="text" name="top_speed" id="top_speed" required>
+
+        <input  placeholder="Car discription:"  type="text" name="discription" id="discription" required>
+
+
+        <input type="file" name="carImage" id="carImage" >
+        <button type="submit">Add Item</button>
+    </form>
+</div>
+    <%- include('../partials/_footer.ejs') %>
+
+    <%- include('../partials/end.ejs') %>
