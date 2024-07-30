@@ -2,14 +2,15 @@
 <div class="container-box">
   <h1><%= car.name %></h1>
 
-  <h1><%= car.model %></h1>
-  <h1><%= car.car_company %></h1>
-  <h1><%= car.car_manufacturer %></h1>
-  <h1><%= car.top_speed %></h1>
-  <h1><%= car.discription %></h1>
+  <h1>car model <%= car.model %></h1>
+  <h1>car company<%= car.car_company %></h1>
+  <h1>car manufacturer<%= car.car_manufacturer %></h1>
+  <h1>top speed<%= car.top_speed %></h1>
+  <h1>car discription <%= car.discription %></h1>
 
-  <img src="/<%= car.image %>" alt="<%= car.name %>" style="width: 300px" />
+  <img src="<%= car.image %>" alt="<%= car.name %>" />
 
+  
   <a href="/users/<%= user._id %>/cars/<%= car._id %>/edit"
     ><button type="submit">Edit this item</button></a
   >

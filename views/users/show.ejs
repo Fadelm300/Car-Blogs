@@ -5,15 +5,16 @@
   <%- include('../partials/_navbar.ejs') %>
   <div class="container-box">
 
-  <h1><%= user.username %>'s Pantry</h1>
+  <h1><%= user.username %> Storage</h1>
   <ul>
-    <% pantry.forEach(food => { %>
-      <li><%= food.name %></li>
+    <% Storage.forEach(car => { %>
+      <li><%= car.name %></li>        <a href="/users/<%= user._id %>/cars/<%= car._id %>"><%= car.name %></a>
+
     <% }); %>
   </ul>
-</div>
+
 
   <%- include('../partials/_footer.ejs') %>
-
+</div>
   <%- include('../partials/end.ejs') %>
 

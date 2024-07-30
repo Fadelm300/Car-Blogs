@@ -13,11 +13,11 @@ router.get('/', async (req, res) => {
   }
 });
 
-// GET a specific user's pantry
+// GET a specific user's Storage
 router.get('/:userId', async (req, res) => {
   try {
     const user = await User.findById(req.params.userId);
-    res.render('users/show.ejs', { user, pantry: user.pantry });
+    res.render('users/show.ejs', { user, Storage: user.Storage });
   } catch (error) {
     console.log(error);
     res.redirect('/');

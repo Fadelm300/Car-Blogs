@@ -1,27 +1,32 @@
-<%- include('../partials/head.ejs') %> <%- include('../partials/_navbar.ejs') %>
+<%- include('../partials/head.ejs') %> 
 <div class="container-box">
-  <h1>my Pantry
+  <%- include('../partials/_navbar.ejs') %>
+  <h1>my Storage
   </h1>
 
   <div class="card-container">
-    <% if (pantry.length > 0) { %> <% pantry.forEach(function(car) { %>
+    <% if (Storage.length > 0) { %> <% Storage.forEach(function(car) { %>
     <div class="item-box">
-      <h2>
-        <a href="/users/<%= user._id %>/cars/<%= car._id %>"><%= car.name %></a>
-      </h2>
+      <div class="img-box">
+
+        <img src="<%= car.image %>" alt="<%= car.name %>"  />
+
+      </div>
       <div class="item-box-discription">
-        <p><%= car.discription %></p>
+        <a href="/users/<%= user._id %>/cars/<%= car._id %>"><%= car.name %></a>
+
       </div>
     </div>
     <% }) %> <% } else { %>
-    <p>There are no items in this pantry.</p>
+    <p>There are no items in this Storage.</p>
 
     <% } %>
   </div>
   <!--  -->
   <!--  -->
-
+<div class="add_button">
   <button><a href="/users/<%= user._id %>/cars/new">Add a New Item</a></button>
+  </div>
+  <%- include('../partials/_footer.ejs') %> 
 </div>
-
-<%- include('../partials/_footer.ejs') %> <%- include('../partials/end.ejs') %>
+<%- include('../partials/end.ejs') %>
