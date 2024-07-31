@@ -1,20 +1,30 @@
-<%- include('../partials/head.ejs') %>
-
-
-
-  <%- include('../partials/_navbar.ejs') %>
-  <div class="container-box">
-
-  <h1><%= user.username %> Storage</h1>
-  <ul>
-    <% Storage.forEach(car => { %>
-      <li><%= car.name %></li>        <a href="/users/<%= user._id %>/cars/<%= car._id %>"><%= car.name %></a>
-
-    <% }); %>
-  </ul>
-
-
-  <%- include('../partials/_footer.ejs') %>
+<%- include('../partials/head.ejs') %> <%- include('../partials/_navbar.ejs') %>
+<div class="container">
+  <div class="container-inside">
+    <div class="image-section">
+      <img src="<%= car.image %>" alt="<%= car.name %>" />
+    </div>
+              <div class="details-section">
+                <h1>Car Name: <%= car.name %></h1>
+                <h1>Model: <%= car.model %></h1>
+                <h1>Car Company: <%= car.car_company %></h1>
+                <h1>Car Manufacturer: <%= car.car_manufacturer %></h1>
+                <h1>Top Speed: <%= car.top_speed %></h1>
+              </div>
+    <div class="description-section">
+      <h1>Car Description: <%= car.description %></h1>
+    </div>
+        <div class="buttons-section">
+          <a href="/users/<%= user._id %>/cars/<%= car._id %>/edit">
+            <button type="submit">Edit</button>
+          </a>
+          <form
+            action="/users/<%= user._id %>/cars/<%= car._id %>?_method=DELETE"
+            method="post"
+          >
+            <button type="submit">Delete</button>
+          </form>
+        </div>
+  </div>
 </div>
-  <%- include('../partials/end.ejs') %>
-
+<%- include('../partials/_footer.ejs') %> <%- include('../partials/end.ejs') %>
