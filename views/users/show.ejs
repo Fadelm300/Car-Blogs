@@ -4,7 +4,8 @@
 
 <div class="container-box">
     <%- include('../partials/_navbar.ejs') %>
-
+    <h1>my Storage
+    </h1>
     <div class="card-container">
       <% if (Storage.length > 0) { %> <% Storage.forEach(function(car) { %>
       <div class="item-box-show">
@@ -19,7 +20,7 @@
           <a href="/users/<%= user._id %>/cars/<%= car._id %>">
 
 <div class="text">
-  <p><span class="label">Car Name:</span> <span class="value"><%= car.name %></span></p>
+  <p><span class="label">Car Name :</span> <span class="value"><%= car.name %></span></p>
   <p><span class="label">Car model:</span> <span class="value"><%= car.model %></span></p>
   <p><span class="label">Car Company:</span> <span class="value"><%= car.car_company %></span></p>
   <p><span class="label">Car Manufacturer:</span> <span class="value"><%= car.car_manufacturer %></span></p>

@@ -1,5 +1,5 @@
 <%- include('../partials/head.ejs') %> <%- include('../partials/_navbar.ejs') %>
-<div class="container">
+<div class="container_full">
   <div class="xcont">
     
  <div class="leftSide">
@@ -12,19 +12,20 @@
 
  <div class="righside">
   <div class="details-section">
-    <h1>Car Name: <%= car.name %></h1>
-    <h1>Model: <%= car.model %></h1>
-    <h1>Car Company: <%= car.car_company %></h1>
-    <h1>Car Manufacturer: <%= car.car_manufacturer %></h1>
-    <h1>Top Speed: <%= car.top_speed %></h1>
+    <h1>Car Name  : <%= car.name %></h1>
+    <h1>Model  : <%= car.model %></h1>
+    <h1>Car Company  : <%= car.car_company %></h1>
+    <h1>Car Manufacturer : <%= car.car_manufacturer %></h1>
+    <h1>Top Speed   : <%= car.top_speed %></h1>
   </div>
   <div class="buttons-se">
-    <a href="/users/<%= user._id %>/cars/<%= car._id %>/edit">
-      <button type="submit">Edit</button>
-    </a>
-    <form
-      action="/users/<%= user._id %>/cars/<%= car._id %>?_method=DELETE"
-      method="post">
+    
+      <form action="/users/<%= user._id %>/cars/<%= car._id %>/edit">
+      <button type="submit">Edit</button></form>
+
+      <form
+    action="/users/<%= user._id %>/cars/<%= car._id %>?_method=DELETE"method="post">
+    
       <button type="submit">Delete</button>
     </form>
 

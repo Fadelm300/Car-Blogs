@@ -1,6 +1,7 @@
 .container-box {
   width: 100%;
   height: 100%;
+  
 }
 .home_body{
   background-color: #000000;
@@ -14,6 +15,7 @@
   row-gap: 20px;
   column-gap: 20px;
   padding-left: 20px;
+  padding-bottom: 100px;
   
 }
 
@@ -21,17 +23,18 @@
   display: grid;
   column-gap: 50px;
   /* border-color: black; */
-  border-style: solid;
+  /* border-style: solid; */
   border-width: 2px;
   width: 28vw;
   height: 15vw;
   padding: 5px;
 }
 .item-box-show {
+  
   display: grid;
   column-gap: 50px;
   /* border-color: black; */
-  border-style: solid;
+  /* border-style: solid; */
   border-width: 2px;
   width: 28vw;
   height: 30vw;
@@ -44,6 +47,7 @@
   
   
 }
+
 a{
   color: #333;
   font-size: 13px;
@@ -60,7 +64,7 @@ justify-content: center;
 .img-box{
  padding: 5px;
   width: 350px;
-height: 150px;
+height: 190px;
 }
 .img-box img{
   width: 100%;

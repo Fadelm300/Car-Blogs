@@ -25,8 +25,8 @@ width: 50vw;
 
 .carnphoto{
 
-    height: 45vh;
-    width: 35vw;
+    height: 250px;
+    width: 390px;
     border: 1px solid #fff;
     border-radius: 10px;
     margin: 15px;
@@ -47,22 +47,112 @@ width: 50vw;
     border: 2px solid #fff;
     color: black;
     font-family:'Times New Roman', Times, serif;
-    margin: 10px;
-    /* padding: 25px 30px 0px 20px; */
-    padding: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    /* padding: 20px 0px 20px 20px; */
+    padding: 20px ;
+    box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.2);
     
+}
+form, form * {
+    all: unset;
 }
 
 .details-section{
 
-
-    form{
-    }
+padding-top: 45px;
+   
 }
 
 
 .buttons-se{
     display: flex;
     justify-content: center;
+    gap: 5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container_full{
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 900px;
+    max-width: 100%;
+    min-height: 480px;
+    margin-bottom: 50px;
+}
+
+.container_full p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.container_full span{
+    font-size: 12px;
+}
+
+
+
+.container_full button{
+    background-color: #512da8;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+ button{
+    background-color: #512da8;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container_full button.hidden{
+    background-color: transparent;
+    border-color: #fff;
+}
+
+ button.hidden{
+    background-color: transparent;
+    border-color: #fff;
+}
+
+
+
+
+
