@@ -97,10 +97,11 @@ padding-top: 45px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
     overflow: hidden;
-    width: 900px;
+    width: 800px;
     max-width: 100%;
-    min-height: 480px;
+    min-height: 530px;
     margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .container_full p{
