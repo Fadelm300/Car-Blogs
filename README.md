@@ -1,6 +1,6 @@
 # Car Blogs
 ![Car_Blogs](/img/cars-blog.png)
-![Car_Blogs](/img/8124.jpg)
+![Car_Blogs](/img/Screenshot%20.png)
 
 
 #website [link](https://cars-blog-dc4322596b1f.herokuapp.com/)
