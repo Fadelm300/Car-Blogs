@@ -1,5 +1,5 @@
 # Car Blogs
-![Car_Blogs](/img/cars-blog.png)
+
 ![Car_Blogs](/img/Screenshot%20.png)
 
 
