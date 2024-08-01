@@ -1,5 +1,7 @@
 # Car Blogs
 ![Car_Blogs](/img/cars-blog.png)
+![Car_Blogs](/img/8124.jpg)
+
 
 #website [link](https://cars-blog-dc4322596b1f.herokuapp.com/)
 
