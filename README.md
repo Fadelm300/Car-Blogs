@@ -1,6 +1,8 @@
 # Car Blogs
 ![Car_Blogs](/img/cars-blog.png)
 
+#website [link](https://cars-blog-dc4322596b1f.herokuapp.com/)
+
 ## Overview
 
 The car blogs website offers a comprehensive platform for car enthusiasts to read and share articles about vehicles, providing detailed reviews, industry news, and expert opinions. Users can browse a wide range of blog posts, compare insights, and read detailed descriptions about various car models.
@@ -21,7 +23,6 @@ The car blogs website offers a comprehensive platform for car enthusiasts to rea
 ![ERD](/img/erd.png)
 
 
-##website [link](https://cars-blog-dc4322596b1f.herokuapp.com/)
 ## Pseudocode
 
 1. Variables
