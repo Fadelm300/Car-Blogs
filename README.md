@@ -68,3 +68,15 @@ The car blogs website offers a comprehensive platform for car enthusiasts to rea
 // Wait for the user to click the "update cars" button.   
 // Wait for the user to click the "view cars" button.# Car-Blogs
 # Car-Blogs
+
+
+<p align="center"><b>Technologies Used</b></p>
+
+* HTML
+* CSS
+* JavaScript
+* Node.js
+* Ejs
+* Express
+* Npm
+* MongoDB
