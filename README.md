@@ -3,7 +3,6 @@
 ![Car_Blogs](/img/Screenshot%20.png)
 
 
-#website [link](https://cars-blog-dc4322596b1f.herokuapp.com/)
 
 ## Overview
 
